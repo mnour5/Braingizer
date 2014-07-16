@@ -25,9 +25,9 @@ Dependencies
 Installation
 ==========
 
-For Ubuntu 13.04: use Install_ubuntu(13.04).sh
-For Radxa Lubuntu: use Install_radxa.sh
-For mali problem on Radxa kindly refere to [this](http://talk.radxa.com/topic/40/renabling-mali-after-system-update#254).
+* For Ubuntu 13.04: use Install_ubuntu(13.04).sh
+* For Radxa Lubuntu: use Install_radxa.sh
+* For mali problem on Radxa kindly refere to [this](http://talk.radxa.com/topic/40/renabling-mali-after-system-update#254).
 
 Authors
 =======

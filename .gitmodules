@@ -1,3 +1,6 @@
 [submodule "bAnalyzer"]
 	path = bAnalyzer
 	url = https://github.com/RaniaRho/bAnalyzer
+[submodule "Data"]
+	path = Data
+	url = https://github.com/mnour5/Braingizer-Data

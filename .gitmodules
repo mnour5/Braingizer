@@ -1,0 +1,4 @@
+[submodule "bAnalyzer"]
+	path = bAnalyzer
+	url = https://github.com/RaniaRho/bAnalyzer
+	branch = master

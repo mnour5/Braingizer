@@ -1,0 +1,670 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>540</width>
+    <height>569</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>540</width>
+    <height>615</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Braingizer Trainer</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>10</y>
+      <width>111</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: bold;</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Status&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Status_Label">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>30</y>
+      <width>380</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Not Connected</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>10</y>
+      <width>66</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: bold;</string>
+    </property>
+    <property name="text">
+     <string>Battery</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Disconnect_Button">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>40</y>
+      <width>98</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Disconnect</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Start_Button">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>520</y>
+      <width>121</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Start Training</string>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="Battery_ProgBar">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>30</y>
+      <width>118</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="value">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Connect_Button">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>98</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Connect</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>80</y>
+      <width>520</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="SessionDetails_Group">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>110</y>
+      <width>541</width>
+      <height>230</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Session Details</string>
+    </property>
+    <widget class="QComboBox" name="Sessions_ComboBox">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>50</y>
+       <width>211</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>&lt;New Session&gt;</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label_18">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>30</y>
+       <width>81</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: bold;</string>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Session&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="SessionSub1_Group">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>90</y>
+       <width>220</width>
+       <height>140</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <widget class="QLabel" name="label_21">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>111</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: bold;</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Description&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="Description_TextEdit">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>20</y>
+        <width>211</width>
+        <height>120</height>
+       </rect>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Ubuntu'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="SessionSub2_Group">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>30</y>
+       <width>220</width>
+       <height>200</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <widget class="QLineEdit" name="BlankTime_LineEdit">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>80</y>
+        <width>50</width>
+        <height>27</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>2</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>60</y>
+        <width>50</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: bold;</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Steady&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="NumberOfTrials_LineEdit">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>20</y>
+        <width>211</width>
+        <height>27</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>50</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="SteadyTime_LineEdit">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>80</y>
+        <width>50</width>
+        <height>27</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>1</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>210</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: bold;</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Number of trials &lt;span style=&quot; font-weight:400;&quot;&gt;(per class)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_10">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>80</y>
+        <width>40</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: bold;</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; vertical-align:sub;&quot;&gt;seconds&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>60</y>
+        <width>50</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: bold;</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Blank&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="TrainingTime_LineEdit">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>80</y>
+        <width>50</width>
+        <height>27</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>4</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>60</y>
+        <width>60</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: bold;</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Training&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_13">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>120</y>
+        <width>121</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: bold;</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Training Classes&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="Right_CheckBox">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>140</y>
+        <width>71</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Right</string>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="Back_CheckBox">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>160</y>
+        <width>100</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Back</string>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="Left_CheckBox">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>160</y>
+        <width>61</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Left</string>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="Forward_CheckBox">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>140</y>
+        <width>90</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Forward</string>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="Neutral_CheckBox">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>180</y>
+        <width>110</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Neutral</string>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="PersonalDetails_Group">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>350</y>
+      <width>240</width>
+      <height>201</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Personal Details</string>
+    </property>
+    <widget class="QLabel" name="label_14">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>30</y>
+       <width>81</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: bold;</string>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Profile&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="Profile_ComboBox">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>50</y>
+       <width>211</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>&lt;New Profile&gt;</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QGroupBox" name="NewProfile_GroupBox">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>90</y>
+       <width>221</width>
+       <height>110</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <widget class="QLabel" name="label_15">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>60</y>
+        <width>81</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: bold;</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Gender&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_16">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>60</y>
+        <width>111</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: bold;</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Age&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="Age_LineEdit">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>80</y>
+        <width>81</width>
+        <height>27</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="Name_LineEdit">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>211</width>
+        <height>27</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_17">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>0</y>
+        <width>111</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: bold;</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Name&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="Gender_ComboBox">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>80</y>
+        <width>91</width>
+        <height>27</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>Male</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Female</string>
+       </property>
+      </item>
+     </widget>
+    </widget>
+   </widget>
+   <zorder>SessionDetails_Group</zorder>
+   <zorder>label</zorder>
+   <zorder>Status_Label</zorder>
+   <zorder>label_2</zorder>
+   <zorder>Disconnect_Button</zorder>
+   <zorder>Start_Button</zorder>
+   <zorder>Battery_ProgBar</zorder>
+   <zorder>Connect_Button</zorder>
+   <zorder>line</zorder>
+   <zorder>PersonalDetails_Group</zorder>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>Connect_Button</tabstop>
+  <tabstop>Disconnect_Button</tabstop>
+  <tabstop>Sessions_ComboBox</tabstop>
+  <tabstop>Description_TextEdit</tabstop>
+  <tabstop>NumberOfTrials_LineEdit</tabstop>
+  <tabstop>BlankTime_LineEdit</tabstop>
+  <tabstop>SteadyTime_LineEdit</tabstop>
+  <tabstop>TrainingTime_LineEdit</tabstop>
+  <tabstop>Right_CheckBox</tabstop>
+  <tabstop>Left_CheckBox</tabstop>
+  <tabstop>Neutral_CheckBox</tabstop>
+  <tabstop>Forward_CheckBox</tabstop>
+  <tabstop>Back_CheckBox</tabstop>
+  <tabstop>Profile_ComboBox</tabstop>
+  <tabstop>Name_LineEdit</tabstop>
+  <tabstop>Age_LineEdit</tabstop>
+  <tabstop>Gender_ComboBox</tabstop>
+  <tabstop>Start_Button</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

@@ -32,9 +32,9 @@ Installation
 Authors
 =======
 
-Ahmed Mohamed Hemaly, Ain-Shams University, Computer & Systems Eng. Dept.
-Mohamed Nour El-Din Ismail, Ain-Shams University, Computer & Systems Eng. Dept.
-Osama Mohamed Mohamed, Ain-Shams University, Computer & Systems Eng. Dept.
-Raghda Hassan Mohamed, Ain-Shams University, Computer & Systems Eng. Dept.
-Rania Nabil Refaat, Ain-Shams University, Computer & Systems Eng. Dept.
-Walid Ezzat Shouman, Ain-Shams University, Computer & Systems Eng. Dept.
+* Ahmed Mohamed Hemaly, Ain-Shams University, Computer & Systems Eng. Dept.
+* Mohamed Nour El-Din Ismail, Ain-Shams University, Computer & Systems Eng. Dept.
+* Osama Mohamed Mohamed, Ain-Shams University, Computer & Systems Eng. Dept.
+* Raghda Hassan Mohamed, Ain-Shams University, Computer & Systems Eng. Dept.
+* Rania Nabil Refaat, Ain-Shams University, Computer & Systems Eng. Dept.
+* Walid Ezzat Shouman, Ain-Shams University, Computer & Systems Eng. Dept.

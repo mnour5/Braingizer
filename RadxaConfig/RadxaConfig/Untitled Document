@@ -1,0 +1,8 @@
+sftp:
+http://stackoverflow.com/questions/11499507/how-to-transfer-a-file-to-ssh-server-in-an-ssh-connection-made-by-pythons-param
+
+SSH(paramiko):
+http://stackoverflow.com/questions/17228943/python-interactive-ssh-client-using-paramiko
+
+SSH:
+http://www.pythonforbeginners.com/code-snippets-source-code/ssh-connection-with-python

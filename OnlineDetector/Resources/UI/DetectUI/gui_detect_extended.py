@@ -18,7 +18,7 @@ class Ui_DetectWindow_Extended(Ui_DetectWindow):
         
         self.DetectWindow   = DetectWindow
         self.MainWindow     = MainWindow
-        self.SensorsWindow  = SensorsWindowa
+        self.SensorsWindow  = SensorsWindow
         
         self.EEG = EEG
         self.Detector = None

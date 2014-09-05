@@ -21,15 +21,15 @@ Autorun_TrainingFile        = "Session_2014_06_27_73509/[T][2014-06-27 20-33-14]
 Autorun_nTrials             = 20
 Autorun_BlankTime           = 1
 Autorun_SteadyTime          = 1
-Autorun_RecordingTime       = 4
+Autorun_RecordingTime       = 2
 Autorun_PostRecordingTime   = 1
 
 #The classes order in the training file
 SortedClasses = ["RIGHT", "LEFT", "NEUTRAL", "FORWARD", "BACK"]
 
 # Enable Motors
-EnableMotors            = False
-MotorStopDelay          = 2
+EnableMotors            = True
+MotorStopDelay          = 1
 
 # Print on the terminal
 PrintSessionDetails     = False     #Enable for RPi, to see the output on the shell

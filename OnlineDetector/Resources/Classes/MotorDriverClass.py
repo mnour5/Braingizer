@@ -23,7 +23,9 @@ class MotorDriver():
                         time.sleep(0.01)
                         msg = arduino.readline()
                         print msg
-                        if(msg[0] == 'C'):
+                        
+                        if "C" in msg:
+                        #if(ch == 'C'):
                             if(AppConfig.PrintMotorState):
                                 print "Motor: Connected"
                             
@@ -53,7 +55,8 @@ class MotorDriver():
                 arduino.write(direction)
                 time.sleep(0.01)
                 msg = arduino.readline()
-                if(msg[0] == acknowledgment):
+                if acknowledgment in msg:
+                #if(msg[0] == acknowledgment):
                     if(AppConfig.PrintMotorState):
                         print "Motor: ", acknowledgment
                     
